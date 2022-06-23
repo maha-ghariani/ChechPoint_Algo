@@ -1,0 +1,20 @@
+ALGORITHM exercice
+VAR
+  c:char;
+  s,nb,nb1:Integer;
+BEGIN
+   while(c <>".")
+   read(c);
+   s:=s+1;
+   IF (c=" ") THEN
+    nb:=nb+1;
+   END_IF
+   If(uppercase(c)="A" or uppercase(c)="E" or uppercase(c)="U" or uppercase(c)="I" or uppercase(c)="O" or uppercase(c)="Y") THEN
+   nb1:=nb1+1;
+   END_IF
+   END_while
+   write("Nombre de caracteres:",s);
+   write("Nombre de mots:",nb+1);
+   write("Nombre de voyelles:",nb1);
+
+END
